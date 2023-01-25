@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="RMA_MoneyAssistant.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RMA_MoneyAssistant"
+    xmlns:pages="clr-namespace:RMA_MoneyAssistant.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <!--Shell.NavBarIsVisible="False">-->
+    <!--NavBar će postati nevidljiv na svim dodle definiranim stranicama-->
+
+   
+
+    <!--Sve ostale stranice treba navigirati korisničkom akcijom-->
+    <!--NPR: await Shell.Current.GoToAsync("//UserLoginOrRegister");-->
+    <ShellContent ContentTemplate="{DataTemplate pages:HelloPage}"
+               Route="HelloPage" FlyoutItemIsVisible="False"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:LoginPage}"
+               Route="Login" FlyoutItemIsVisible="False"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:SignUpPage}"
+               Route="Register" FlyoutItemIsVisible="False"/>
+
+
+    <FlyoutItem  Title="ProfilePage">
+        <ShellContent Route="Flay"
+                      ContentTemplate="{DataTemplate pages:ProfilePage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="TransactionPage">
+        <ShellContent ContentTemplate="{DataTemplate pages:TransactionPage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="FirstTab">
+        <ShellContent ContentTemplate="{DataTemplate pages:FirstTab}" />
+    </FlyoutItem>
+  
+</Shell>
