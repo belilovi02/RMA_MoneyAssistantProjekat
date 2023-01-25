@@ -1,8 +1,8 @@
 namespace RMA_MoneyAssistant.Pages;
 
-public partial class Stednja : ContentPage
+public partial class Savings : ContentPage
 {
-	public Stednja()
+	public Savings()
 	{
 		InitializeComponent();
 	}
