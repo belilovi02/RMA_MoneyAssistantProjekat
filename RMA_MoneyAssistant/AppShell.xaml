@@ -32,5 +32,8 @@
     <FlyoutItem Title="FirstTab">
         <ShellContent ContentTemplate="{DataTemplate pages:FirstTab}" />
     </FlyoutItem>
+    <FlyoutItem Title="Stednja">
+        <ShellContent ContentTemplate="{DataTemplate pages:Stednja}" />
+    </FlyoutItem>
   
 </Shell>
