@@ -35,9 +35,5 @@
     <FlyoutItem Title="Savings">
         <ShellContent ContentTemplate="{DataTemplate pages:Savings}" />
     </FlyoutItem>
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> a1a3959ea70eca8fb60a145cd80921784d6ab93c
 </Shell>
