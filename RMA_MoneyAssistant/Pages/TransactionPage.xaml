@@ -2,11 +2,98 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RMA_MoneyAssistant.Pages.TransactionPage"
-             Title="TransactionPage">
+             xmlns:helpers="clr-namespace:RMA_MoneyAssistant.Helpers"
+             Title="TransactionPage"
+             BackgroundColor="{DynamicResource ColorSmokeWhite}">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Transaction!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
+               HeightRequest="70">
+            <HorizontalStackLayout
+                Margin="20,0"
+                Spacing="0"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Food:"
+                    TextColor="{DynamicResource ColorPrimary}"
+                    FontSize="Medium"/>
+                <Label
+                    Text="-43.45 BAM"
+                    TextDecorations="Underline"
+                    FontAttributes="Bold"
+                    TextColor="{DynamicResource ColorPrimary}"
+                    FontSize="Medium"/>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.TrashCan}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorPrimary}"/>
+                    </Image.Source>
+                </Image>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorAccent}"
+               HeightRequest="70">
+            <HorizontalStackLayout
+                Margin="20,0"
+                Spacing="65">
+                <Label
+                    Text="Regres:"
+                    TextColor="{DynamicResource ColorSecondary}"
+                    FontSize="Medium"/>
+                <Label
+                    Text="+100.00 BAM"
+                    TextDecorations="Underline"
+                    FontAttributes="Bold"
+                    TextColor="{DynamicResource ColorSecondary}"
+                    FontSize="Medium"/>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.TrashCan}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorSecondary}"/>
+                    </Image.Source>
+                </Image>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorAccent}"
+               HeightRequest="70"></Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
+               HeightRequest="70"></Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
+               HeightRequest="70"></Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
+               HeightRequest="70"></Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorAccent}"
+               HeightRequest="70"></Frame>
+        <Frame BorderColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
+               HeightRequest="70"></Frame>
+        <Button
+                Text="New transaction"
+                TextColor="{DynamicResource ColorPrimary}"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                BackgroundColor="{DynamicResource ColorSecondary}"
+                WidthRequest="350"
+                HeightRequest="70"
+                CornerRadius="10"
+                Margin="0,15,0,0"/>
+        <Button
+                Text="Add category"
+                TextColor="{DynamicResource ColorSecondary}"
+                FontSize="Medium"
+                FontAttributes="Bold"
+                BackgroundColor="{DynamicResource ColorPrimary}"
+                WidthRequest="350"
+                HeightRequest="70"
+                CornerRadius="10"
+                Margin="0,15,0,0"/>
     </VerticalStackLayout>
 </ContentPage>
