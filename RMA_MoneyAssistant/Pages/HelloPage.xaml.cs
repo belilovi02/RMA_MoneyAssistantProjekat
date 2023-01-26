@@ -10,8 +10,8 @@ public partial class HelloPage : ContentPage
     {
         await Navigation.PushModalAsync(new LoginPage(null));
     }
-    private void OnSignupClicked(object sender, EventArgs e)
+    private async void OnSignupClicked(object sender, EventArgs e)
     {
-         Navigation.PushModalAsync(new SignUpPage());
+        await Navigation.PushModalAsync(new SignUpPage());
     }
 }
