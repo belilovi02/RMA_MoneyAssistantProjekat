@@ -10,7 +10,7 @@ public partial class SignUpPage : ContentPage
 	}
     
 
-    private void NextClicked(object sender, EventArgs e)
+    private async void NextClicked(object sender, EventArgs e)
     {
         if ((UsernameEntry.Text != null) && (PassEntry.Text != null) && (PassConfirmEntry.Text != null))
         {
@@ -25,7 +25,7 @@ public partial class SignUpPage : ContentPage
                 _user.UserName = UsernameEntry.Text;
                 _user.Password = PassEntry.Text;
 
-                Navigation.PushModalAsync(new LoginPage(_user));
+               await Navigation.PushModalAsync(new LoginPage(_user));
             }
         }
         else
