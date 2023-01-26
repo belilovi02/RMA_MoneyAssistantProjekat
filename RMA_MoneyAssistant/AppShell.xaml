@@ -32,14 +32,11 @@
     <FlyoutItem Title="TransactionPage">
         <ShellContent ContentTemplate="{DataTemplate pages:TransactionPage}" />
     </FlyoutItem>
-<<<<<<< HEAD
-    <FlyoutItem Title="CurrentStatePage">
-        <ShellContent ContentTemplate="{DataTemplate pages:CurrentStatePage}" />
+    <FlyoutItem Title="FirstTab">
+        <ShellContent ContentTemplate="{DataTemplate pages:FirstTab}" />
     </FlyoutItem>
-=======
->>>>>>> d9ea0f41e9146b9e49fdb7fbea24b1f53047c3fd
-    <FlyoutItem Title="Savings">
-        <ShellContent ContentTemplate="{DataTemplate pages:Savings}" />
+    <FlyoutItem Title="Stednja">
+        <ShellContent ContentTemplate="{DataTemplate pages:Stednja}" />
     </FlyoutItem>
   
 </Shell>
