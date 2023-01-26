@@ -35,11 +35,11 @@
                 </Image>
                 <Label
                     Text="Your Username: Nadina"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
                 <Label
                     x:Name="username"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
@@ -53,11 +53,11 @@
                 </Image>
                 <Label
                     Text="Your Email: nadina@gmail.com"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
                 <Label
                     x:Name="email"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
             </HorizontalStackLayout>
             <HorizontalStackLayout
@@ -71,11 +71,11 @@
                 </Image>
                 <Label
                     Text="Your Phone Number: 062567876"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
                 <Label
                     x:Name="phonenumber"
-                    TextColor="{DynamicResource ColorAccent}"
+                    TextColor="{DynamicResource ColorDusky}"
                     FontSize="Medium"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>

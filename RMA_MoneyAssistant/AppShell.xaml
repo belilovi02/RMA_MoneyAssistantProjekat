@@ -5,12 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:RMA_MoneyAssistant"
     xmlns:pages="clr-namespace:RMA_MoneyAssistant.Pages"
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Flyout"
+    FlyoutBackgroundColor="{DynamicResource ColorPrimary}"
+    FlyoutWidth="300">
 
     <!--Shell.NavBarIsVisible="False">-->
     <!--NavBar će postati nevidljiv na svim dodle definiranim stranicama-->
-
-   
 
     <!--Sve ostale stranice treba navigirati korisničkom akcijom-->
     <!--NPR: await Shell.Current.GoToAsync("//UserLoginOrRegister");-->

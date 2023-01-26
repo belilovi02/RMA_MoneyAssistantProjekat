@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RMA_MoneyAssistant.Pages.AddTransaction"
+             xmlns:helpers="clr-namespace:RMA_MoneyAssistant.Helpers"
+             Title="AddTransaction"
+             BackgroundColor="{DynamicResource ColorPrimary}">
+    <VerticalStackLayout
+        Padding="20"
+        HorizontalOptions="Center"
+        Margin="0,30">
+        <Label 
+            Text="Create new transaction"
+            FontSize="30"
+            FontAttributes="Bold"
+            TextColor="{DynamicResource ColorSecondary}"
+            Margin="0,20"/>
+        <Label 
+            Text="Please add transaction details"
+            FontSize="Medium"
+            TextColor="{DynamicResource ColorSecondary}"
+            HorizontalOptions="Center"/>
+        <Grid RowDefinitions="*,*,*">
+            <StackLayout Grid.Row="1"
+                     Padding="10,10"
+                     Spacing="20">
+                <Border Style="{DynamicResource EntryBorderStyle}">
+                    <HorizontalStackLayout>
+                        <Entry x:Name="TransactionEntry" Placeholder="Enter the transaction amount"
+                           Style="{DynamicResource BasicEntryStyle}"/>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border Style="{DynamicResource EntryBorderStyle}">
+                    <HorizontalStackLayout>
+                        <Picker
+                                x:Name="category"
+                                HorizontalOptions="CenterAndExpand"
+                                Title="Select a category"
+                                Style="{DynamicResource BasicEntryStyle}"
+                                ItemDisplayBinding="{Binding Category}"/>
+                    </HorizontalStackLayout>
+                </Border>
+                <Border Style="{DynamicResource EntryBorderStyle}">
+                    <HorizontalStackLayout>
+                    <Picker
+                            x:Name="typeOfTransaction"
+                            HorizontalOptions="CenterAndExpand"
+                            Title="Select a type of transaction"
+                            Style="{DynamicResource BasicEntryStyle}"
+                            ItemDisplayBinding="{Binding TypeOfTransaction}"/>
+                    </HorizontalStackLayout>
+                </Border>
+                <Button Text="Done"
+                    Style="{DynamicResource PrimaryButtonStyle}"/>
+
+            </StackLayout>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

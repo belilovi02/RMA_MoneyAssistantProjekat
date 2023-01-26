@@ -215,7 +215,8 @@
                 WidthRequest="350"
                 HeightRequest="70"
                 CornerRadius="10"
-                Margin="0,15,0,0"/>
+                Margin="0,15,0,0"
+                Clicked="AddTransactionClicked"/>
         <Button
                 Text="Add category"
                 TextColor="{DynamicResource ColorSecondary}"
@@ -225,6 +226,7 @@
                 WidthRequest="350"
                 HeightRequest="70"
                 CornerRadius="10"
-                Margin="0,15,0,0"/>
+                Margin="0,15,0,0"
+                Clicked="AddCategoryClicked"/>
     </VerticalStackLayout>
 </ContentPage>

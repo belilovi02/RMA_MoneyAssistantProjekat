@@ -42,7 +42,7 @@
         <Setter Property="Stroke" Value="{DynamicResource ColorAccent}"/>
         <Setter Property="StrokeThickness" Value="1"/>
         <Setter Property="BackgroundColor" Value="Transparent"/>
-        <Setter Property="HeightRequest" Value="55"/>
+        <Setter Property="HeightRequest" Value="65"/>
         <Setter Property="Padding" Value="10"/>
         <Setter Property="StrokeShape">
             <Setter.Value>
