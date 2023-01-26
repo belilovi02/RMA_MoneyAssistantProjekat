@@ -18,7 +18,7 @@
                      Spacing="20">
             <Border Style="{DynamicResource EntryBorderStyle}">
                 <HorizontalStackLayout>
-                    <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image Style="{DynamicResource ImageEntryIconStyle}" MinimumHeightRequest="40">
                         <Image.Source>
                             <FontImageSource Glyph="{x:Static helpers:IconFont.AccountOutline}"
                                              FontFamily="IconFontTypes"

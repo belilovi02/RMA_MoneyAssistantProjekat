@@ -29,11 +29,11 @@
     <FlyoutItem Title="TransactionPage">
         <ShellContent ContentTemplate="{DataTemplate pages:TransactionPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="FirstTab">
-        <ShellContent ContentTemplate="{DataTemplate pages:FirstTab}" />
+    <FlyoutItem Title="CurrentStatePage">
+        <ShellContent ContentTemplate="{DataTemplate pages:CurrentStatePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Stednja">
-        <ShellContent ContentTemplate="{DataTemplate pages:Stednja}" />
+    <FlyoutItem Title="Savings">
+        <ShellContent ContentTemplate="{DataTemplate pages:Savings}" />
     </FlyoutItem>
   
 </Shell>
