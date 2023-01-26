@@ -26,27 +26,10 @@
                            Style="{DynamicResource BasicEntryStyle}"/>
                     </HorizontalStackLayout>
                 </Border>
-                <Frame
-                        HorizontalOptions="FillAndExpand"
-                        CornerRadius="10"
-                        BackgroundColor="{DynamicResource ColorPrimary}"
-                        BorderColor="{DynamicResource ColorAccent}"
-                        Padding="10"
-                        HeightRequest="65"
-                        WidthRequest="350">
-                    <VerticalStackLayout
-                        VerticalOptions="Center"
-                        HorizontalOptions="StartAndExpand">
-                        <Picker
-                                x:Name="category"
-                                HorizontalOptions="CenterAndExpand"
-                                Title="Delete old category?"
-                                Style="{DynamicResource BasicEntryStyle}"
-                                ItemDisplayBinding="{Binding Category}"/>
-                    </VerticalStackLayout>
-                </Frame>
+               
                 <Button Text="Done"
-                    Style="{DynamicResource PrimaryButtonStyle}"/>
+                    Style="{DynamicResource PrimaryButtonStyle}"
+                    Clicked="Done"/>
             </StackLayout>
         </Grid>
     </VerticalStackLayout>

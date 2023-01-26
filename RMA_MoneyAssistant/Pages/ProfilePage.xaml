@@ -83,8 +83,8 @@
             Margin="30,50"
             Spacing="40">
             <Button
-                    Text="Update"
-                    TextColor="{DynamicResource ColorPrimary}"
+                    Text="Settings"
+                    TextColor="{DynamicResource ColorSecondary}"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     BackgroundColor="{DynamicResource ColorAccent}"

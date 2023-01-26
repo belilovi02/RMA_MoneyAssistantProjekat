@@ -4,7 +4,8 @@
              x:Class="RMA_MoneyAssistant.Pages.AddTransaction"
              xmlns:helpers="clr-namespace:RMA_MoneyAssistant.Helpers"
              Title="AddTransaction"
-             BackgroundColor="{DynamicResource ColorPrimary}">
+             BackgroundColor="{DynamicResource ColorPrimary}"
+             >
     <VerticalStackLayout
         Padding="20"
         HorizontalOptions="Center"
@@ -21,11 +22,10 @@
             FontSize="Medium"
             TextColor="{DynamicResource ColorSecondary}"
             HorizontalOptions="Center"/>
-        <Grid RowDefinitions="*,*,*">
-            <StackLayout Grid.Row="1"
-                     Padding="10,10"
-                     Spacing="20">
-                <Border Style="{DynamicResource EntryBorderStyle}">
+        <VerticalStackLayout
+            Margin="0,80"
+            Spacing="20">
+            <Border Style="{DynamicResource EntryBorderStyle}">
                     <HorizontalStackLayout>
                         <Entry x:Name="TransactionEntry" Placeholder="Enter the transaction amount"
                            Style="{DynamicResource BasicEntryStyle}"/>
@@ -46,7 +46,7 @@
                                 x:Name="category"
                                 HorizontalOptions="CenterAndExpand"
                                 Title="Select a category"
-                                ItemDisplayBinding="{Binding Category}"/>
+                                ItemDisplayBinding="{Binding Name}"/>
                     </VerticalStackLayout>
                 </Frame>
                 <Frame
@@ -64,13 +64,12 @@
                             x:Name="typeOfTransaction"
                             HorizontalOptions="CenterAndExpand"
                             Title="Select a type of transaction"
-                            ItemDisplayBinding="{Binding TypeOfTransaction}"/>
+                            ItemDisplayBinding="{Binding Name}"/>
                     </VerticalStackLayout>
                 </Frame>
-                <Button Text="Done"
-                    Style="{DynamicResource PrimaryButtonStyle}"/>
-
-            </StackLayout>
-        </Grid>
+        <Button Text="Done"
+                    Style="{DynamicResource PrimaryButtonStyle}"
+                    Clicked="Done"/>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

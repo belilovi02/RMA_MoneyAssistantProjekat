@@ -29,4 +29,9 @@ public partial class AddTransaction : ContentPage
         category.ItemsSource = categoryList;
         typeOfTransaction.ItemsSource = transactionList;
     }
+
+    private async void Done(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
+    }
 }
