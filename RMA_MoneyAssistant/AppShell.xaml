@@ -7,7 +7,8 @@
     xmlns:pages="clr-namespace:RMA_MoneyAssistant.Pages"
     Shell.FlyoutBehavior="Flyout"
     FlyoutBackgroundColor="{DynamicResource ColorPrimary}"
-    FlyoutWidth="300">
+    FlyoutWidth="300"
+    Shell.BackgroundColor="{DynamicResource ColorPrimary}">
 
     <!--Shell.NavBarIsVisible="False">-->
     <!--NavBar će postati nevidljiv na svim dodle definiranim stranicama-->
@@ -22,14 +23,14 @@
                Route="Register" FlyoutItemIsVisible="False"/>
 
 
-    <FlyoutItem  Title="ProfilePage">
+    <FlyoutItem  Title="Profile">
         <ShellContent Route="Flay"
                       ContentTemplate="{DataTemplate pages:ProfilePage}"/>
     </FlyoutItem>
-    <FlyoutItem Title="CurrentStatePage">
+    <FlyoutItem Title="Current State">
         <ShellContent ContentTemplate="{DataTemplate pages:CurrentStatePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="TransactionPage">
+    <FlyoutItem Title="Transactions">
         <ShellContent ContentTemplate="{DataTemplate pages:TransactionPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Savings">

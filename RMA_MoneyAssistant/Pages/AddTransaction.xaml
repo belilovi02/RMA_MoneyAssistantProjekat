@@ -14,6 +14,7 @@
             FontSize="30"
             FontAttributes="Bold"
             TextColor="{DynamicResource ColorSecondary}"
+            HorizontalOptions="Center"
             Margin="0,20"/>
         <Label 
             Text="Please add transaction details"
@@ -30,26 +31,42 @@
                            Style="{DynamicResource BasicEntryStyle}"/>
                     </HorizontalStackLayout>
                 </Border>
-                <Border Style="{DynamicResource EntryBorderStyle}">
-                    <HorizontalStackLayout>
+                <Frame
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="10"
+                        BackgroundColor="{DynamicResource ColorPrimary}"
+                        BorderColor="{DynamicResource ColorAccent}"
+                        Padding="10"
+                        HeightRequest="65"
+                        WidthRequest="350">
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        HorizontalOptions="StartAndExpand">
                         <Picker
                                 x:Name="category"
                                 HorizontalOptions="CenterAndExpand"
                                 Title="Select a category"
-                                Style="{DynamicResource BasicEntryStyle}"
                                 ItemDisplayBinding="{Binding Category}"/>
-                    </HorizontalStackLayout>
-                </Border>
-                <Border Style="{DynamicResource EntryBorderStyle}">
-                    <HorizontalStackLayout>
-                    <Picker
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="10"
+                        BackgroundColor="{DynamicResource ColorPrimary}"
+                        BorderColor="{DynamicResource ColorAccent}"
+                        Padding="10"
+                        HeightRequest="65"
+                        WidthRequest="350">
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        HorizontalOptions="StartAndExpand">
+                        <Picker
                             x:Name="typeOfTransaction"
                             HorizontalOptions="CenterAndExpand"
                             Title="Select a type of transaction"
-                            Style="{DynamicResource BasicEntryStyle}"
                             ItemDisplayBinding="{Binding TypeOfTransaction}"/>
-                    </HorizontalStackLayout>
-                </Border>
+                    </VerticalStackLayout>
+                </Frame>
                 <Button Text="Done"
                     Style="{DynamicResource PrimaryButtonStyle}"/>
 

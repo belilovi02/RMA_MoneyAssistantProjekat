@@ -13,6 +13,7 @@
             Text="Add a new category"
             FontSize="30"
             FontAttributes="Bold"
+            HorizontalOptions="Center"
             TextColor="{DynamicResource ColorSecondary}"
             Margin="0,20"/>
         <Grid RowDefinitions="*,*,*">
@@ -25,16 +26,25 @@
                            Style="{DynamicResource BasicEntryStyle}"/>
                     </HorizontalStackLayout>
                 </Border>
-                <Border Style="{DynamicResource EntryBorderStyle}">
-                    <HorizontalStackLayout>
+                <Frame
+                        HorizontalOptions="FillAndExpand"
+                        CornerRadius="10"
+                        BackgroundColor="{DynamicResource ColorPrimary}"
+                        BorderColor="{DynamicResource ColorAccent}"
+                        Padding="10"
+                        HeightRequest="65"
+                        WidthRequest="350">
+                    <VerticalStackLayout
+                        VerticalOptions="Center"
+                        HorizontalOptions="StartAndExpand">
                         <Picker
                                 x:Name="category"
                                 HorizontalOptions="CenterAndExpand"
                                 Title="Delete old category?"
                                 Style="{DynamicResource BasicEntryStyle}"
                                 ItemDisplayBinding="{Binding Category}"/>
-                    </HorizontalStackLayout>
-                </Border>
+                    </VerticalStackLayout>
+                </Frame>
                 <Button Text="Done"
                     Style="{DynamicResource PrimaryButtonStyle}"/>
             </StackLayout>
