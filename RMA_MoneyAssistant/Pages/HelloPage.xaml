@@ -11,6 +11,7 @@
             <Grid Grid.Row="0">
                 <Label Text="Money Assistant" Style="{DynamicResource TitleLabelStyle}"
                        Margin="0,200,0,0" FontSize="30"/>
+                
                 <Image Source="finance_welcome_logo.png"
                        Aspect="AspectFit"
                        HorizontalOptions="CenterAndExpand"

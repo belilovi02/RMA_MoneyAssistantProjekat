@@ -27,7 +27,7 @@ public partial class LoginPage : ContentPage
         }
         else
         {
-             Shell.Current.GoToAsync("//Flay");
+            Shell.Current.GoToAsync("//Flay");
         }
     }
 

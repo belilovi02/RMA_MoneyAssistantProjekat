@@ -42,7 +42,7 @@
                
                >
             <VerticalStackLayout>
-                <Label Text="Current state"
+                <Label Text="Current state dd"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
                            FontSize="20"

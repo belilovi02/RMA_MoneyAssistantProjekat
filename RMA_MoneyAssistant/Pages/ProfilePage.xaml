@@ -2,12 +2,140 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RMA_MoneyAssistant.Pages.ProfilePage"
-             Title="ProfilePage">
+             xmlns:helpers="clr-namespace:RMA_MoneyAssistant.Helpers"
+             Title="ProfilePage"
+             BackgroundColor="{DynamicResource ColorPrimary}">
     <VerticalStackLayout>
         <Label 
             Text="Welcome to your profile page!"
-            FontSize="Large"
+            FontSize="25"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            TextColor="{DynamicResource ColorAccent}"
+            Margin="0,25,0,50"/>
+        
+        <Image Source="finance_welcome_logo.png"
+                       Aspect="AspectFit"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="End"
+                       Margin="0,0,0,50"
+                       HeightRequest="100"/>
+
+        <VerticalStackLayout
+            HorizontalOptions="Center"
+            Spacing="30">
+            <HorizontalStackLayout
+                Spacing="10">
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.AccountOutline}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Label
+                    Text="Your Username: Nadina"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+                <Label
+                    x:Name="username"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="10">
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.EmailOutline}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Label
+                    Text="Your Email: nadina@gmail.com"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+                <Label
+                    x:Name="email"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                Spacing="10">
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Cellphone}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Label
+                    Text="Your Phone Number: 062567876"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+                <Label
+                    x:Name="phonenumber"
+                    TextColor="{DynamicResource ColorAccent}"
+                    FontSize="Medium"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+        <VerticalStackLayout
+            Margin="30,50"
+            Spacing="40">
+            <Button
+                    Text="Update"
+                    TextColor="{DynamicResource ColorPrimary}"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    BackgroundColor="{DynamicResource ColorAccent}"
+                    WidthRequest="350"
+                    HeightRequest="50"
+                    CornerRadius="10"
+                    Margin="0,15,0,0"/>
+            <Label
+                    Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus felis id laoreet egestas. Suspendisse ullamcorper libero diam, vel facilisis quam posuere vitae. Nunc pretium elementum dolor, vel volutpat turpis pretium sit amet."
+                    TextColor="{DynamicResource ColorDusky}"
+                    FontSize="Small"/>
+            <HorizontalStackLayout
+                Spacing="15"
+                HorizontalOptions="Center">
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Instagram}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Facebook}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Snapchat}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Twitter}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+                <Image Style="{DynamicResource ImageEntryIconStyle}">
+                    <Image.Source>
+                        <FontImageSource Glyph="{x:Static helpers:IconFont.Linkedin}"
+                                             FontFamily="IconFontTypes"
+                                             Color="{DynamicResource ColorAccent}"/>
+                    </Image.Source>
+                </Image>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
     </VerticalStackLayout>
 </ContentPage>
