@@ -38,17 +38,12 @@
                CornerRadius="20"
                HeightRequest="220" 
                BackgroundColor="{DynamicResource ColorSecondary}"
-<<<<<<< HEAD
                Margin="20,5"
                
                >
+
             <VerticalStackLayout>
-                <Label Text="Current state"
-=======
-               Margin="20,5"/>
-        <VerticalStackLayout>
-            <Label Text="Current state dd"
->>>>>>> a1a3959ea70eca8fb60a145cd80921784d6ab93c
+                <Label Text="Current state dd"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
                            FontSize="20"
@@ -59,15 +54,15 @@
                            TextDecorations="Underline"
                                />
 
-            <HorizontalStackLayout Spacing="10"
+                <HorizontalStackLayout Spacing="10"
                                        >
-                <Image Source="price.png"
+                    <Image Source="price.png"
                        Aspect="AspectFill"
                        HeightRequest="60"
                            Margin="0,6,0,0"
                       
                       />
-                <Label Text="1200.35 BAM"
+                    <Label Text="1200.35 BAM"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
                            FontSize="20"
@@ -75,16 +70,17 @@
                            TextDecorations="Underline"
                            Margin="0,22,0,0"
                                />
-            </HorizontalStackLayout>
+                </HorizontalStackLayout>
 
-            <Button 
+                <Button 
                         Text="Convert to Euro"
                         Style="{DynamicResource SecondaryButtonStyle}"
                         WidthRequest="150"
                         HorizontalOptions="End"
                             />
 
-        </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
 
 
         <Frame BorderColor="{DynamicResource ColorDusky}"
@@ -139,9 +135,9 @@
                             />
 
 
-            </VerticalStackLayout>
+                </VerticalStackLayout>
 
-        </Frame>
+    </Frame>
 
     </VerticalStackLayout>
 </ContentPage>
