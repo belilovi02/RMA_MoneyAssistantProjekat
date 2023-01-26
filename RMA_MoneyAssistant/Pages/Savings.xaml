@@ -2,11 +2,130 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RMA_MoneyAssistant.Pages.Savings"
-             Title="Savings">
+             Title="Savings" BackgroundColor="{DynamicResource ColorSmokeWhite}"
+             >
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Savings"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
+        <Frame BackgroundColor="{DynamicResource ColorPrimary}"
+                       HeightRequest="220"
+                       CornerRadius="0"
+                       >
+
+            <HorizontalStackLayout VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="CenterAndExpand"
+                                          >
+                <Label Text="Here you can see how much money you have saved so far and the potential the amount of money you can save for 1 year based on your income and costs."
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorSmokeWhite}"
+                           FontSize="15"
+                           MaximumWidthRequest="260"
+                           Margin="0,0,0,40"
+                           HeightRequest="110"
+                           VerticalTextAlignment="Center"
+                               
+                               />
+                <Image Source="droid.png"
+                       Aspect="Fill"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="End"
+                       HeightRequest="80"/>
+                
+            </HorizontalStackLayout>
+
+        </Frame>
+
+        <Frame BorderColor="{DynamicResource ColorDusky}"
+               CornerRadius="20"
+               HeightRequest="220" 
+               BackgroundColor="{DynamicResource ColorSecondary}"
+               Margin="20,5"
+               
+               >
+            <VerticalStackLayout>
+                <Label Text="Currently saved"
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorPrimary}"
+                           FontSize="18"
+                           MaximumWidthRequest="260"
+                           Margin="20,10,0,0"
+                           VerticalTextAlignment="Start"
+                           HorizontalTextAlignment="Start"
+                           TextDecorations="Underline"
+                               />
+
+                <HorizontalStackLayout Spacing="10"
+                                       >
+                    <Image Source="saving1.png"
+                       Aspect="AspectFill"
+                       HeightRequest="50"
+                       Margin="0,10,0,0"
+                      />
+                    <Label Text="1200.35 BAM"
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorPrimary}"
+                           FontSize="20"
+                           MaximumWidthRequest="160"
+                           TextDecorations="Underline"
+                           Margin="0,22,0,0"
+                               />
+                </HorizontalStackLayout>
+
+                <Button 
+                        Text="Convert to Euro"
+                        Style="{DynamicResource SecondaryButtonStyle}"
+                        WidthRequest="150"
+                        HorizontalOptions="End"
+                            />
+
+            </VerticalStackLayout>
+
+        </Frame>
+        <Frame BorderColor="{DynamicResource ColorDusky}"
+               CornerRadius="20"
+               HeightRequest="220" 
+               BackgroundColor="{DynamicResource ColorAccent}"
+               Margin="20,0" 
+               >
+            <VerticalStackLayout>
+                <Label Text="Potential savings for one year"
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorPrimary}"
+                           FontSize="18"
+                           MaximumWidthRequest="260"
+                           Margin="20,10,0,0"
+                           VerticalTextAlignment="Start"
+                           HorizontalTextAlignment="Start"
+                           TextDecorations="Underline"
+                               />
+
+                <HorizontalStackLayout Spacing="10">
+                    <Image Source="saving2.png"
+                       Aspect="AspectFill"
+                       HeightRequest="50"
+                       Margin="0,6,0,0"
+                      />
+
+                    <Label Text="1200.35 BAM"
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorPrimary}"
+                           FontSize="20"
+                           MaximumWidthRequest="160"
+                           TextDecorations="Underline"
+                           Margin="0,22,0,0"
+                               />
+                </HorizontalStackLayout>
+
+                <Button 
+                        Text="Convert to Euro"
+                        Style="{DynamicResource SecondaryButtonStyle}"
+                        WidthRequest="150"
+                        HorizontalOptions="End"
+                            />
+
+
+            </VerticalStackLayout>
+
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>

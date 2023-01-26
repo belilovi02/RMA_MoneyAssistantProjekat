@@ -25,7 +25,7 @@
                            TextColor="{DynamicResource ColorSmokeWhite}"
                            FontSize="15"
                            MaximumWidthRequest="260"
-                           Margin="0,0,0,50"
+                           Margin="0,0,0,40"
                                HeightRequest="110"
                                VerticalTextAlignment="Center"
                                
@@ -42,7 +42,7 @@
                
                >
             <VerticalStackLayout>
-                <Label Text="Current state dd"
+                <Label Text="Current state"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
                            FontSize="20"
@@ -58,7 +58,8 @@
                     <Image Source="price.png"
                        Aspect="AspectFill"
                        HeightRequest="60"
-                           Margin="0,10,0,0"
+                           Margin="0,6,0,0"
+                      
                       />
                     <Label Text="1200.35 BAM"
                            Style="{DynamicResource HeaderLabelStyle}"
@@ -83,12 +84,12 @@
         <Frame BorderColor="{DynamicResource ColorDusky}"
                CornerRadius="20"
                HeightRequest="220" 
-               BackgroundColor="{DynamicResource ColorSecondary}"
+               BackgroundColor="{DynamicResource ColorDusky}"
                Margin="20,0"
                
                >
             <VerticalStackLayout>
-                <Label Text="Current state"
+                <Label Text="Last transactions"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
                            FontSize="20"
@@ -99,29 +100,38 @@
                            TextDecorations="Underline"
                                />
 
-                <HorizontalStackLayout Spacing="10"
-                                       >
-                    <Image Source="price.png"
-                       Aspect="AspectFill"
-                       HeightRequest="60"
-                           Margin="0,10,0,0"
-                      />
-                    <Label Text="1200.35 BAM"
+                <HorizontalStackLayout Spacing="10">
+                    <Label Text="+ 400.35 BAM"
                            Style="{DynamicResource HeaderLabelStyle}"
                            TextColor="{DynamicResource ColorPrimary}"
-                           FontSize="20"
+                           FontSize="18"
                            MaximumWidthRequest="160"
                            TextDecorations="Underline"
-                           Margin="0,22,0,0"
+                           Margin="15,10,0,0"
                                />
                 </HorizontalStackLayout>
-
+                <HorizontalStackLayout Spacing="10"
+                                       >
+                    
+                    <Label Text="- 200.35 BAM"
+                           Style="{DynamicResource HeaderLabelStyle}"
+                           TextColor="{DynamicResource ColorPrimary}"
+                           FontSize="18"
+                           MaximumWidthRequest="160"
+                           TextDecorations="Underline"
+                           Margin="15,10,0,0"
+                               />
+                </HorizontalStackLayout>
                 <Button 
-                        Text="Convert to Euro"
+                        Text="ADD"
                         Style="{DynamicResource SecondaryButtonStyle}"
-                        WidthRequest="150"
+                        WidthRequest="100"
+                    HeightRequest="50"
                         HorizontalOptions="End"
+                     Margin="0,0,20,0"
+                    
                             />
+
 
             </VerticalStackLayout>
 
